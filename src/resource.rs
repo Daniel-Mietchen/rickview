@@ -19,6 +19,7 @@ pub struct Resource {
     pub directs: Vec<(String, Vec<String>)>,
     /// HTML representations of subjects and properties of triples where this resource is an object.
     pub inverses: Vec<(String, Vec<String>)>,
+    pub blank_nodes: Vec<(String, Vec<String>)>,
     pub duration: String,
     pub github_issue_url: Option<String>,
     pub depiction: Option<String>,

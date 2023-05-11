@@ -68,6 +68,20 @@
           {{ endfor }}
         </table>
       </div>
+      <aside class="empty"></aside>
+      <div id="blank_nodes">
+        <h3>blank nodes</h3>
+        <table>
+          {{ for entry in blank_nodes}}
+          <tr>
+            <td class="td1">
+              <label class="c1">{ entry.0 | unescaped }</label>
+            </td>
+            <td class="td2">{{ for value in entry.1 }} {{ if not @first }}<br />{{ endif }}<span class="c2">{ value | unescaped }</span>{{ endfor }}</td>
+          </tr>
+          {{ endfor }}
+        </table>
+      </div>
       {duration}
     </article>
     <footer>

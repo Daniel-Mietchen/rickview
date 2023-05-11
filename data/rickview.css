@@ -72,7 +72,7 @@ h3 {
   font-size: 11px;
 }
 
-div#directs {
+div#directs, div#blank_nodes {
   padding: 24px;
   background: #fff;
   color: #212121;
